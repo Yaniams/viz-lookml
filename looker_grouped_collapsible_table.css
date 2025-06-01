@@ -10,13 +10,13 @@
     font-family: public sans;
     font-size: 20px;
     z-index: 2;
-}
+}*/
 
 #tooltip.hidden {
     display: none;
 }
 
-#tooltip p {
+/*#tooltip p {
     margin: 0;
     font-family: public sans;
     font-size: 20px;
@@ -34,12 +34,14 @@
 
 .reportTable th {
     background-color: #154c79;
-    color: #ffffff;
+    color: #262D33;
     border: 1px solid #CCCCCC;
     border-bottom: 1px solid #CCCCCC !important;
     padding: 5px;
     text-align: center;
-    font-size: 20px;
+    font-size: 14px;
+    line-heigth:24.5px;
+    font-family:Roboto,"Noto Sans",Noto Sans JP;
 }
 
 .reportTable td {
@@ -51,16 +53,6 @@
     font-size: 24px;
     white-space: pre-line;
     word-wrap: break-word;
-}
-
-/* Columnas contraÃ­bles excepto Marca */
-.reportTable td:not(.marca-col) {
-    max-height: 3em;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    cursor: pointer;
-    transition: all 0.3s ease;
 }
 
 .reportTable td:not(.marca-col).expanded {
