@@ -1,0 +1,113 @@
+
+/*#tooltip {
+    position: absolute;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+    font-family: public sans;
+    font-size: 20px;
+    z-index: 2;
+}
+
+#tooltip.hidden {
+    display: none;
+}
+
+#tooltip p {
+    margin: 0;
+    font-family: public sans;
+    font-size: 20px;
+    line-height: 15px;
+}*/
+
+.reportTable {
+    font-family: public sans;
+    font-size: 25px;
+    border: 1px solid #CCCCCC;
+    border-collapse: collapse;
+    border-spacing: 3px;
+    width: 100%;
+}
+
+.reportTable th {
+    background-color: #FFC20F;
+    color: #000000;
+    border: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC !important;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.reportTable td {
+    color: #000000;
+    vertical-align: top;
+    padding: 5px;
+    border: 1px solid #CCCCCC;
+    font-size: 24px;
+    white-space: pre-line;
+    word-wrap: break-word;
+}
+
+/* NUEVOS ESTILOS PARA COLUMNAS CONTRAÍBLES */
+.collapsible-col {
+    max-width: 120px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.collapsible-col.expanded {
+    white-space: normal;
+    max-width: none;
+    word-wrap: break-word;
+}
+
+/* NUEVOS ESTILOS PARA AGRUPAR POR MARCA */
+.group-header {
+    background-color: #E6E6E6;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.group-content {
+    display: none;
+}
+
+.group-content.expanded {
+    display: table-row-group;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right !important;
+}
+
+.indent {
+    padding-left: 15px;
+}
+
+.subtotal {
+    font-style: italic;
+    font-weight: bold;
+    background: #D3D3D3;
+}
+
+.total {
+    border-top: 2px solid #000000 !important;
+    font-weight: bold !important;
+}
+
+.total.transposed {
+    border-top: 0px !important;
+    background: #D3D3D3;
+}
