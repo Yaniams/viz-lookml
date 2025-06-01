@@ -1,4 +1,3 @@
-
 /*#tooltip {
     position: absolute;
     width: auto;
@@ -34,8 +33,8 @@
 }
 
 .reportTable th {
-    background-color: #FFC20F;
-    color: #000000;
+    background-color: #154c79;
+    color: #ffffff;
     border: 1px solid #CCCCCC;
     border-bottom: 1px solid #CCCCCC !important;
     padding: 5px;
@@ -44,6 +43,7 @@
 }
 
 .reportTable td {
+    background-color: #E4E4E5;
     color: #000000;
     vertical-align: top;
     padding: 5px;
@@ -53,9 +53,9 @@
     word-wrap: break-word;
 }
 
-/* NUEVOS ESTILOS PARA COLUMNAS CONTRAÍBLES */
-.collapsible-col {
-    max-width: 120px;
+/* Columnas contraÃ­bles excepto Marca */
+.reportTable td:not(.marca-col) {
+    max-height: 3em;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -63,15 +63,15 @@
     transition: all 0.3s ease;
 }
 
-.collapsible-col.expanded {
+.reportTable td:not(.marca-col).expanded {
     white-space: normal;
-    max-width: none;
+    max-height: none;
     word-wrap: break-word;
 }
 
-/* NUEVOS ESTILOS PARA AGRUPAR POR MARCA */
+/* Grupo por Marca */
 .group-header {
-    background-color: #E6E6E6;
+    background-color: #D0D0D0;
     font-weight: bold;
     cursor: pointer;
 }
@@ -111,3 +111,5 @@
     border-top: 0px !important;
     background: #D3D3D3;
 }
+
+
